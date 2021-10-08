@@ -5,7 +5,7 @@ const sp = path.join(__dirname,'/public')
 const port = process.env.PORT
 app.use(express.static(sp))
 app.get('',(req,res)=>{
-  res.send("yes")
+  res.render(index)
   //res.render('index')
 })
 app.listen(3000 || port,()=>{
